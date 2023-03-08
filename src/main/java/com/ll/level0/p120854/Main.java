@@ -1,5 +1,6 @@
 package com.ll.level0.p120854;
 
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
@@ -29,4 +30,9 @@ class Solution {
         return lengths;
     }
 
+    public int[] solution2(String[] strings) {
+        return Arrays.stream(strings)// strings 배열을 stream으로 변환한 뒤
+                    .mapToInt(String::length) // mapToInt 메서드를 이용해 String 요소를 int로 매핑
+                    .toArray(); // 최종적으로 toArray 메서드를 호출하여 int[] 배열로 변환
+    }
 }
