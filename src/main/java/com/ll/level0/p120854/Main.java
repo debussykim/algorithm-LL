@@ -17,6 +17,11 @@ public class Main {
 
 class Solution {
     public int[] solution(String[] strlist) { // String 배열을 입력으로 받고, int 배열을 반환
+        // 입력값으로 null이나 빈 배열이 들어올 때, solution 메서드가 예외를 던지지 않고 빈 배열을 반환하는지 검증
+        if (strlist == null) {
+            return new int[0];
+        }
+
         int[] lengths = new int[strlist.length]; // 길이가 strlist.length인 int 배열 생성
         for (int i = 0; i < strlist.length; i++) { // strlist 배열의 각 원소에 대해 length() 메서드를 호출하여 길이를 구한다.
             lengths[i] = strlist[i].length(); // lengths 배열에 저장하고, 마지막으로 lengths 배열을 반환
