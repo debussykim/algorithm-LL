@@ -1,6 +1,5 @@
 package com.ll.level0.p120906;
 
-import static jdk.internal.loader.AbstractClassLoaderValue.map;
 
 public class Main {
     public static void main(String[] args) {

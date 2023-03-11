@@ -1,4 +1,4 @@
-package com.ll.pgs.level0.p120889;
+package com.ll.level0.p120889;
 
 public class Main {
 }

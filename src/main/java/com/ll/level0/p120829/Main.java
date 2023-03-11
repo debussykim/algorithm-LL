@@ -1,4 +1,4 @@
-package com.ll.pgs.level0.p120829;
+package com.ll.level0.p120829;
 
 public class Main {
     public static void main(String[] args) {
